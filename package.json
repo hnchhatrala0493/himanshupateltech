@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://hnchhatrala0493.github.io",
+  "homepage": "https://hnchhatrala0493.github.io/himanshupateltech",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
