@@ -592,7 +592,7 @@ export default function PortfolioPage() {
                     </h3>
 
                     <p className="text-lg text-gray-400 transition duration-300 group-hover:text-cyan-300">
-                      himanshu.dev@gmail.com
+                      himanshupatel0493@gmail.com
                     </p>
                   </div>
 
@@ -606,7 +606,7 @@ export default function PortfolioPage() {
                     </h3>
 
                     <p className="text-lg text-gray-400 transition duration-300 group-hover:text-cyan-300">
-                      +91 98765 43210
+                      +91 87808 70844
                     </p>
                   </div>
 
@@ -677,7 +677,7 @@ export default function PortfolioPage() {
                         <select className="w-full rounded-2xl border border-white/10 bg-black/30 px-5 py-4 text-white outline-none transition-all duration-300 focus:border-cyan-500 focus:bg-black/50 focus:shadow-lg focus:shadow-cyan-500/10">
                           <option>Web Designing</option>
                           <option>Web Development</option>
-                          <option>MERN Stack Development</option>
+                          <option>Full Stack Development</option>
                           <option>React Native App</option>
                           <option>UI/UX Design</option>
                           <option>REST API Development</option>
