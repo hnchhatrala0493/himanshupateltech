@@ -5,13 +5,7 @@ export default function PortfolioPage() {
 
   const projects = [
     {
-      title: 'VUF Enterprise Dashboard',
-      description: 'Modern enterprise dashboard with analytics and role management.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
-      category: 'Full Stack'
-    },
-    {
-      title: 'Laravel CRM Platform',
+      title: 'CRM Platform',
       description: 'Advanced CRM platform with workflow automation.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
       category: 'CRM'
