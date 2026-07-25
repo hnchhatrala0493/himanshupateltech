@@ -1,49 +1,44 @@
-# Portfolio React
+# Himanshu Chhatrala — Portfolio
 
-A modern React portfolio site with Vite, TypeScript, and Tailwind CSS.
+A responsive, accessible developer portfolio built with React, TypeScript, Vite, Tailwind CSS, Framer Motion, React Router, React Hook Form, and Zod.
 
 ## Features
 
-- ⚡ Vite for fast development
-- 🎨 Tailwind CSS for styling
-- 📦 TypeScript for type safety
-- 🏠 Home, About, and Projects sections
-- 📱 Responsive design
+- Light and dark themes with persisted preference
+- Responsive single-page portfolio and mobile navigation
+- Data-driven skills, projects, experience, and testimonials
+- Filterable projects with dynamic case-study routes
+- Accessible, validated contact form with backend-ready service
+- SEO metadata, structured Person data, legal pages, and 404 route
+- Reduced-motion support and keyboard-visible controls
 
-## Getting Started
+## Setup
 
-1. Install dependencies:
 ```bash
 npm install
-```
-
-2. Start development server:
-```bash
 npm run dev
 ```
 
-3. Build for production:
+Create `.env` from `.env.example`. Set `VITE_CONTACT_API_URL` to a JSON-compatible contact endpoint. Without it, the form runs in safe preview mode.
+
+## Commands
+
 ```bash
+npm run dev
 npm run build
+npm run preview
+npm run lint
 ```
 
-## Project Structure
+## Customize
 
-```
-src/
-  ├── components/
-  │   ├── Navbar.tsx
-  │   ├── Hero.tsx
-  │   ├── About.tsx
-  │   ├── Projects.tsx
-  │   └── Footer.tsx
-  ├── App.tsx
-  ├── main.tsx
-  └── index.css
-```
+- Personal details: `src/config/personal.ts`
+- Projects and experience: `src/data/portfolio.ts`
+- Theme and design tokens: `src/index.css`
+- Contact transport: `src/services/contact.ts`
 
-## Customization
+Add the real resume at `public/resume/himanshu-chhatrala-resume.pdf`, then replace placeholder contact and social values before publishing.
 
-- Update your information in `src/components/Hero.tsx`
-- Add your projects in `src/components/Projects.tsx`
-- Modify colors in `tailwind.config.js`
+## Deploy
+
+Import the repository into Vercel and use the default Vite settings. `vercel.json` provides SPA route refresh handling.
