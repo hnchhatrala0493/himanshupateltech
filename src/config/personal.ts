@@ -5,8 +5,8 @@ export const personalInfo = {
   role: 'MERN Stack Developer',
   tagline: 'Problem Solver · Tech Enthusiast',
   location: 'Ahmedabad, Gujarat, India',
-  email: 'himanshu@example.com',
-  phone: '+91 98765 43210',
+  email: 'himanshupatel0493@gmail.com',
+  phone: '+91 8780870844',
   resumeUrl: '/resume/himanshu-chhatrala-resume.pdf',
   socialLinks: {
     github: 'https://github.com/himanshu',

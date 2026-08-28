@@ -9,6 +9,8 @@ export interface Project {
   longDescription: string;
   technologies: string[];
   accent: string;
+  image: string;
+  imageAlt: string;
   features: string[];
   challenge: string;
   result: string;
@@ -19,4 +21,6 @@ export interface Experience {
   company: string;
   duration: string;
   description: string;
+  technologies: string[];
+  current?: boolean;
 }
