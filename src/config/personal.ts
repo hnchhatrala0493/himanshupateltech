@@ -7,6 +7,7 @@ export const personalInfo = {
   location: 'Ahmedabad, Gujarat, India',
   email: 'himanshupatel0493@gmail.com',
   phone: '+91 8780870844',
+  profileImage: '/images/profile/himanshu-profile.webp',
   resumeUrl: '/resume/himanshu-chhatrala-resume.pdf',
   socialLinks: {
     github: 'https://github.com/himanshu',

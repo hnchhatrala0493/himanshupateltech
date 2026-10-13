@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { ArrowRight, BriefcaseBusiness, CalendarDays, Check, Code2, Download, ExternalLink, FolderKanban, Github, Mail, MapPin, Phone, Sparkles, Star, Target } from 'lucide-react';
+import { ArrowRight, BriefcaseBusiness, CalendarDays, Check, Code2, Download, ExternalLink, FolderKanban, Github, Mail, MapPin, Phone, Star, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SiAmazonwebservices, SiCss3, SiDocker, SiExpress, SiGit, SiGithub, SiHtml5, SiJavascript, SiMongodb, SiNodedotjs, SiPostgresql, SiReact, SiRedis, SiTailwindcss, SiTypescript, SiVercel } from 'react-icons/si';
 import { ContactForm } from '../components/ContactForm';
+import { HeroPortrait } from '../components/hero/HeroPortrait';
 import { ButtonLink, Container, Reveal, SectionHeading, SocialLinks } from '../components/Shared';
 import { personalInfo } from '../config/personal';
 import { experience, projects, skills, technologies } from '../data/portfolio';
@@ -44,13 +45,7 @@ export default function HomePage() {
           <div className="hero-buttons"><ButtonLink href={personalInfo.resumeUrl}><Download size={17} /> Download CV</ButtonLink><ButtonLink href="#contact" secondary>Let’s talk</ButtonLink></div>
           <div className="connect"><span>Connect with me</span><SocialLinks /></div>
         </Reveal>
-        <motion.div className="hero-visual" initial={{ opacity: 0, scale: .94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .7 }}>
-          <div className="availability"><i />Available for work</div>
-          <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="portrait"><img src="/images/developer-workspace.png" alt="Modern indigo-lit developer workspace" /></div>
-          <div className="float-card code"><Code2 /> <span>Clean code<small>Thoughtfully engineered</small></span></div>
-          <div className="float-card shipped"><Sparkles /> <span>3+<small>Projects shipped</small></span></div>
-        </motion.div>
+        <HeroPortrait />
       </Container>
       <Container><Reveal className="portfolio-stats">{portfolioStats.map(([Icon, value, label]) => <div className="portfolio-stat" key={label}><span className="stat-icon"><Icon size={20} /></span><div><strong>{value}</strong><span>{label}</span></div></div>)}</Reveal></Container>
       <Container><div className="tech-stack-panel"><div className="tech-stack-heading"><span className="eyebrow"><i />Tech stack</span><h2>Technologies I work with</h2><p>Modern tools and technologies I use to build scalable and efficient solutions.</p></div><Reveal className="portfolio-stack">{portfolioStack.map(([Icon, name, category]) => <div className="stack-card" tabIndex={0} key={name}><span><Icon /></span><div><strong>{name}</strong><small>{category}</small></div></div>)}</Reveal></div></Container>
